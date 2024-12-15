@@ -9,7 +9,7 @@ for(let i = 0; i < rows * 3; i++) {
 }
 
 function getRandomSize() {
-    return `${getRandomNr()}x${getRandomNr()}`
+    return `${getRandomNr()}/${getRandomNr()}`
 }
 
 function getRandomNr() {
