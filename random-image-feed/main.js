@@ -1,5 +1,5 @@
 const container = document.querySelector('.container')
-const picsumURL = 'https://picsum.photos/'
+const picsumURL = 'https://picsum.photos/300/300'
 const rows = 5
 
 for(let i = 0; i < rows * 3; i++) {
