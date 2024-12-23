@@ -2,6 +2,7 @@ const nums = document.querySelectorAll('.nums span')
 const counter = document.querySelector('.counter')
 const finalMessage = document.querySelector('.final')
 const replay = document.querySelector('#replay')
+const beep = document.getElementById('beep')
 
 runAnimation()
 
@@ -22,6 +23,7 @@ function runAnimation() {
 
     num.addEventListener('animationend', (e) => {
       if (e.animationName === 'goIn' && idx !== nextToLast) {
+        beep.play()
         num.classList.remove('in')
         num.classList.add('out')
       } else if (e.animationName === 'goOut' && num.nextElementSibling) {
