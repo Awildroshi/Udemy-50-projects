@@ -11,6 +11,7 @@ function writeText() {
 
     idx++
 
+    
     if(idx > text.length) {
         idx = 1
     }
